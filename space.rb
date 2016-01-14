@@ -1,17 +1,3 @@
-puts "Plateu size?"
-plateu= gets.chomp
-
-puts "Initial start position Elon?"
-location1 = gets.chomp
-
-puts "How are you moving Elon? Left (L), Right(R) or Move (M)?"
-movement1 = gets.chomp
-
-puts "Initial start position Musk?"
-location2 = gets.chomp
-
-puts "How are you moving Musk? Left (L), Right(R) or Move (M)?"
-movement2 = gets.chomp
 
 class Rover
   attr_accessor :x, :y, :direction
@@ -19,6 +5,9 @@ class Rover
     @x = x
     @y = y
     @direction = direction
+    puts "x""y"
+    x,y = gets.chomp.to_i
+
   end
 
   def read_instruction
@@ -56,9 +45,19 @@ module Turn
   end
 end
 
-class Elon < Rover
-end
-read_instruction(Elon)
+# class Elon < Rover
+#   puts "Initial start position Elon?"
+#   location = gets.chomp
+#   puts "How are you moving Elon? Left (L), Right(R) or Move (M)?"
+#   movement = gets.chomp
+# end
+# read_instruction(Elon)
 #
 # class Musk < Rover
+#
+#   puts "Initial start position Musk?"
+#   location = gets.chomp
+#
+#   puts "How are you moving Musk? Left (L), Right(R) or Move (M)?"
+#   movement = gets.chomp
 # end
