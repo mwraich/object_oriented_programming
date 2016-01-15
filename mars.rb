@@ -9,8 +9,20 @@ rover_init = gets.chomp.split
 
 x = rover_init[0].to_i
 y = rover_init[1].to_i
-d = rover_init[2]
+d = rover_init[2].upcase
 puts "#{x},#{y},#{d}"
-
-
-x  xmax
+#
+puts "How are you moving? Left (L), Right(R) or Move (M)?"
+movement = gets.chomp.split.upcase
+put movement
+end
+#  rotate(d)
+# puts direction
+# direction = ["N","E","S","W"]
+#
+# def rotate(direction)
+# if  "L"
+#   direction =directions[direction.index(direction)-1]
+# elsif "R"
+#    direction = directions[direction.index(direction)+1]
+# end
